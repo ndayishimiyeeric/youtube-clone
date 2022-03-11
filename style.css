@@ -1,46 +1,56 @@
-:root {
-  --color-grey-1: #bdbdbd;
-  --color-orange-1: #f9a109;
-  --color-red-1: #eb5757;
-  --color-background-1: #fafafe;
-  --color-background-2: #fff0de;
-  --color-blue-1: #56ccf2;
-}
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 500;
-  line-height: 2rem;
-  color: #000;
-  background-color: var(--color-background-1);
-  min-height: 100vh;
+  color: #fff;
+  background-color: #212121;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #212121;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.menu-bars {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-right: 1.5rem;
+}
+
+#youtube-logo {
+  color: #f90201;
+  padding-right: 0.2rem;
+}
+
+.navbar h1 {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
 }
 
 .container {
   display: flex;
   justify-content: start;
   column-gap: 3rem;
-  background-color: var(--color-background-1);
+  background-color: #212121;
 }
+
 .previews {
   width: 300px;
-  background-color: var(--color-background-2);
+  background-color: #212121;
 }
 .previews > img {
   width: 80%;
